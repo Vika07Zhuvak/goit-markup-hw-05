@@ -5,6 +5,12 @@ body {
     margin: 0;
 }
 
+/* Block page scroll*/
+
+body:has(.backdrop.is-open) {
+    overflow: hidden;
+}
+
 ul,
 ol {
     list-style-type: none;
@@ -751,6 +757,69 @@ a {
     fill: #ffffff;
 }
 
+/*Custom checkbox*/
+
+.form-agreement{
+    margin-bottom: 24px;
+}
+
+.agreement-checkbox{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+
+    color: transparent;
+
+    border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked + .agreement-wrapper > .agreement-checkbox{
+    background-color: #404bbf;
+    border-color: #404bbf;
+    color:  #f4f4fd;
+    
+
+}
+
+
+.agreement-checkbox-icon{
+    fill: currentColor;
+}
+
+/* Текст біля чекбоксу */
+.agreement-wrapper {
+    font-size: 12px;
+    line-height: 1.1667;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+   
+}
+
+
+.agreement-link{
+    line-height: 1.33333;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #4d5ae5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -819,48 +888,39 @@ a {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .modal-btn {
     position: absolute;
-    top: 32px;
-    right: 32px;
-    width: 8px;
-    height: 8px;
+    top: 24px;
+    right: 24px;
+
+    width: 24px;
+    /* розмір самої кнопки */
+    height: 24px;
 
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0;
 
-    border: none;
-    background-color: transparent;
+    background-color: #e7e9fc;
+    /* фон кнопки */
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    /* легка рамка */
+    border-radius: 50%;
+    /* робить коло */
 
-    color: #2E2F42;
     cursor: pointer;
-
-    transition: color 300ms ease-in;
-
-    border-radius: 100%;
-    fill: #e7e9fc;
-    stroke-width: 1px;
-    stroke: rgba(0, 0, 0, 0.1);
-
-    
-    
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* стилі для іконки-хрестика */
+.modal-btn-icon {
+    width: 8px;
+    height: 8px;
+    fill: #2e2f42;
+    pointer-events: none;
+    /* щоб клік спрацьовував на кнопку */
+}
 
 .modal-form-field{
     margin-bottom: 8px;
