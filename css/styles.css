@@ -685,16 +685,21 @@ a {
     height: 24px;
 }
 
-.footer-form-input{
-    border: 1px solid #fff;
-    color: #ffffff;
-    border-radius: 4px;
+.footer-form-input {
     width: 264px;
     height: 40px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    padding-left: 16px;
+
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+
     background-color: transparent;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     outline: transparent;
-    
 }
 
 .footer-form-input:focus{
@@ -706,9 +711,8 @@ a {
     font-size: 12px;
     line-height: 2;
     letter-spacing: 0.04em;
-    color: #fff;
+    color: #ffffff;
 }
-
 .footer-subscribe {
     margin-left: 80px;
     
@@ -772,6 +776,40 @@ input[type="checkbox"]:checked + .agreement-wrapper > .agreement-checkbox{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ========= Modal Backdrop ========= */
 .backdrop {
     position: fixed;
@@ -796,7 +834,6 @@ input[type="checkbox"]:checked + .agreement-wrapper > .agreement-checkbox{
 /* ========= Modal Window ========= */
 .modal {
     position: absolute;
-    /* або fixed — як хочеш; тести ок з absolute */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -818,6 +855,11 @@ input[type="checkbox"]:checked + .agreement-wrapper > .agreement-checkbox{
     transform: translate(-50%, -100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
+
+
+
 
 /* ========= Close Button ========= */
 .modal-btn {
@@ -983,7 +1025,6 @@ input[type="checkbox"]:checked + .agreement-wrapper > .agreement-checkbox{
     width: 10px;
     height: 8px;
     fill: transparent;
-    /* іконка невидима, доки не checked */
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
