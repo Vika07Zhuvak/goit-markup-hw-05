@@ -863,12 +863,11 @@ input[type="checkbox"]:checked + .agreement-wrapper > .agreement-checkbox{
     position: absolute;
     top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%);
 
     width: 408px;
     min-height: 584px;
     border-radius: 4px;
-
-    transform: translate(-50%,-50%);
 
     box-shadow:0 1px 1px 0 rgba(0, 0, 0, 0.14),
         0 1px 3px 0 rgba(0, 0, 0, 0.12),
@@ -922,7 +921,7 @@ input[type="checkbox"]:checked + .agreement-wrapper > .agreement-checkbox{
 }
 
 .modal-form-field{
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 }
 
 .modal-form-label{
@@ -988,7 +987,7 @@ input[type="checkbox"]:checked + .agreement-wrapper > .agreement-checkbox{
 }
 
 .checkbox:checked+.agreement-wrapper .agreement-checkbox-icon {
-    fill: #f4f4fd;
+    fill: #F4F4FD;
 }
 
 .modal-form-icon{
@@ -1089,9 +1088,7 @@ input[type="checkbox"]:checked + .agreement-wrapper > .agreement-checkbox{
     cursor: pointer;
     border: none;
 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .btn-btn-accent:hover,
 .btn-btn-accent:focus {
