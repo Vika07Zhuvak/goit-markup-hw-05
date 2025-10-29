@@ -733,15 +733,17 @@ a {
     align-items: center;
 }
 
-.btn-btn-accent {
+.footer-btn {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 16px;
+
     min-width: 165px;
     height: 40px;
     border: none;
     border-radius: 4px;
+
     background-color: var(--accent-color);
     color: #ffffff;
     font-weight: 500;
@@ -749,14 +751,14 @@ a {
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
+
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn-btn-accent:hover,
-.btn-btn-accent:focus {
+.footer-btn:hover,
+.footer-btn:focus {
     background-color: #31d0aa;
 }
-
 .btn-icon {
     fill: #ffffff;
 }
