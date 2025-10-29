@@ -891,7 +891,6 @@ input[type="checkbox"]:checked + .agreement-wrapper > .agreement-checkbox{
     right: 24px;
 
     width: 24px;
-    /* розмір самої кнопки */
     height: 24px;
 
     display: flex;
@@ -900,23 +899,26 @@ input[type="checkbox"]:checked + .agreement-wrapper > .agreement-checkbox{
     padding: 0;
 
     background-color: #e7e9fc;
-    /* фон кнопки */
     border: 1px solid rgba(0, 0, 0, 0.1);
-    /* легка рамка */
     border-radius: 50%;
-    /* робить коло */
 
     cursor: pointer;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* стилі для іконки-хрестика */
+
 .modal-btn-icon {
     width: 8px;
     height: 8px;
     fill: #2e2f42;
     pointer-events: none;
-    /* щоб клік спрацьовував на кнопку */
+    
+}
+
+.modal-btn:hover .modal-btn-icon,
+.modal-btn:focus .modal-btn-icon {
+    fill: #ffffff;
 }
 
 .modal-form-field{
@@ -968,12 +970,15 @@ input[type="checkbox"]:checked + .agreement-wrapper > .agreement-checkbox{
 
 .modal-btn:hover,
 .modal-btn:focus {
-    color: #404BBF;
+    background-color: #404bbf;
+    border: none;
 }
 
 .modal-btn-icon {
-    stroke: currentColor;
-    fill: currentColor;
+    fill: #2e2f42;
+    width: 8px;
+    height: 8px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-caption{
