@@ -918,8 +918,6 @@ input[type="checkbox"]:checked + .agreement-wrapper > .agreement-checkbox{
     margin-bottom: 16px;
 }
 
-}
-
 .modal-form-label {
     display: block;
     margin-bottom: 4px;
@@ -931,7 +929,6 @@ input[type="checkbox"]:checked + .agreement-wrapper > .agreement-checkbox{
 
 .modal-form-wrapper {
     position: relative;
-    margin-bottom: 8px;
 }
 
 .modal-form-input {
