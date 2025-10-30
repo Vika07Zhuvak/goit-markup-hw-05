@@ -915,8 +915,25 @@ input[type="checkbox"]:checked + .agreement-wrapper > .agreement-checkbox{
 }
 
 .modal-form-field {
+    margin-bottom: 8px;
+}
+
+/* змінила це */
+
+.form-agreement{
     margin-bottom: 16px;
 }
+
+
+/* стандартний відступ для більшості полів */
+.modal-form-field {
+    margin-bottom: 8px;
+}
+
+/* більший відступ для поля Comment  і це */
+.modal-form-field--comment {
+    margin-bottom: 16px;
+} 
 
 .modal-form-label {
     display: block;

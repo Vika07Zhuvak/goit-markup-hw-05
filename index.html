@@ -476,6 +476,7 @@
                 <svg class="btn-icon" width="24" height="24">
                     <use href="./images/icons.svg#icon-icon-send"></use>
                 </svg>
+
             </button>
 
             </form>
@@ -488,17 +489,19 @@
 <!-- Modal Window-->
 
 
+    <!-- Modal Window-->
     <div class="backdrop is-open">
         <div class="modal">
             <button class="modal-btn" type="button">
-                  <svg class="modal-btn-icon" width="8" height="8">
-                  <use href="./images/icons.svg#icon-close"></use>
+                <svg class="modal-btn-icon" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close"></use>
                 </svg>
             </button>
-            
+    
             <p class="modal-caption">Leave your contacts and we will call you back</p>
-
+    
             <form class="modal-form" name="review">
+                <!-- Name field -->
                 <div class="modal-form-field">
                     <label class="modal-form-label" for="user-name">Name</label>
                     <div class="modal-form-wrapper">
@@ -508,8 +511,8 @@
                         </svg>
                     </div>
                 </div>
-
-
+    
+                <!-- Phone field -->
                 <div class="modal-form-field">
                     <label class="modal-form-label" for="user-phone">Phone</label>
                     <div class="modal-form-wrapper">
@@ -519,9 +522,10 @@
                         </svg>
                     </div>
                 </div>
- 
+    
+                <!-- Email field -->
                 <div class="modal-form-field">
-                    <label class="modal-form-label"  for="user-email">Email</label>
+                    <label class="modal-form-label" for="user-email">Email</label>
                     <div class="modal-form-wrapper">
                         <input class="modal-form-input" type="email" id="user-email" name="user-email" />
                         <svg class="modal-form-icon" width="18" height="24">
@@ -529,15 +533,18 @@
                         </svg>
                     </div>
                 </div>
-
-                <div class="modal-form-field">
+    
+                <!-- Comment field (має більший відступ) -->
+                <div class="modal-form-field modal-form-field--comment">
                     <label class="modal-form-label" for="user-comment">Comment</label>
-                    <textarea class="modal-form-message" name="user-comment" id="user-comment" placeholder="Text input"></textarea>
+                    <textarea class="modal-form-message" name="user-comment" id="user-comment"
+                        placeholder="Text input"></textarea>
                 </div>
-                
+    
+                <!-- Checkbox -->
                 <div class="form-agreement">
-                    <input class="checkbox visually-hidden" type="checkbox" name="user-privacy" id="user-privacy" value="true" />
-                
+                    <input class="checkbox visually-hidden" type="checkbox" name="user-privacy" id="user-privacy"
+                        value="true" />
                     <label class="agreement-wrapper" for="user-privacy">
                         <span class="agreement-checkbox">
                             <svg class="agreement-checkbox-icon" width="10" height="8">
@@ -545,20 +552,16 @@
                             </svg>
                         </span>
                         I accept the terms and conditions of the
-                        <a class="agreement-link accent-text" href="./index.html" target="_blank">
-                            Privacy Policy
-                        </a>
+                        <a class="agreement-link accent-text" href="./index.html" target="_blank">Privacy Policy</a>
                     </label>
                 </div>
-
-
-
-          
-
+    
+                <!-- Submit button -->
                 <button class="btn-btn-accent" type="submit">Send</button>
             </form>
         </div>
     </div>
+
     
 
 </body>
