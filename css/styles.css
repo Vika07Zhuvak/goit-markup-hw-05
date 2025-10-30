@@ -915,6 +915,10 @@ input[type="checkbox"]:checked + .agreement-wrapper > .agreement-checkbox{
 }
 
 .modal-form-field {
+    margin-bottom: 16px;
+}
+
+.modal-form-field:not(:last-child) {
     margin-bottom: 8px;
 }
 
