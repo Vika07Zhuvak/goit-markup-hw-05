@@ -1037,7 +1037,7 @@ input[type="checkbox"]:checked + .agreement-wrapper > .agreement-checkbox{
     border: none;
 }
 
-.checkbox:checked+.agreement-wrapper .agreement-checkbox-icon {
+.checkbox:checked + .agreement-wrapper .agreement-checkbox-icon {
     fill: #F4F4FD;
 }
 
