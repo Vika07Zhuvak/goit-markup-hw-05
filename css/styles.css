@@ -1035,6 +1035,11 @@ input[type="checkbox"]:checked + .agreement-wrapper > .agreement-checkbox{
 .checkbox:checked+.agreement-wrapper .agreement-checkbox {
     background-color: #404bbf;
     border: none;
+    fill: #F4F4FD;
+}
+
+.agreement-checkbox {
+    fill: transparent;
 }
 
 .checkbox:checked + .agreement-wrapper .agreement-checkbox-icon {
